@@ -1,0 +1,35 @@
+<Window
+    x:Class="C64_10_Print_Avalonia.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Name="c64Window"
+    Width="800"
+    Height="560"
+    Background="Black"
+    FontFamily="/Assets/C64_Pro_Mono-STYLE.ttf#"
+    FontSize="16"
+    mc:Ignorable="d">
+    <Viewbox Stretch="Uniform">
+        <!--  border of width of 5 lines and 5 columns  -->
+        <Panel
+            Name="c64TextContainer"
+            Width="800"
+            Height="560"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="#0088FF">
+            <!--  40 columns == 320px, 25 lines == 200px => 8px*8px / char  -->
+            <TextBlock
+                Name="c64TextBlock"
+                Width="640"
+                Height="400"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Background="#0000AA"
+                Foreground="#0088FF"
+                TextWrapping="Wrap" />
+        </Panel>
+    </Viewbox>
+</Window>
