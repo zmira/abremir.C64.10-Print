@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "abremir.C64.10-Print-SFML",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "abremir.C64.10-Print-SystemConsole", "abremir.C64.10-Print-SystemConsole\abremir.C64.10-Print-SystemConsole.csproj", "{B746FCE5-5E65-4F11-8830-F60971BC0610}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "abremir.C64.10-Print-Avalonia", "abremir.C64.10-Print-Avalonia\abremir.C64.10-Print-Avalonia.csproj", "{F76E5949-EB00-4F42-AD5C-9E14EF4AE5CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "abremir.C64.10-Print-Avalonia", "abremir.C64.10-Print-Avalonia\abremir.C64.10-Print-Avalonia.csproj", "{F76E5949-EB00-4F42-AD5C-9E14EF4AE5CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AF02A934-621E-4556-AE1E-2232E3FF601E}"
+	ProjectSection(SolutionItems) = preProject
+		..\.editorconfig = ..\.editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
