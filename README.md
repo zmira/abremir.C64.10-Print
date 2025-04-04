@@ -36,7 +36,7 @@ Unfortunately, this is not achievable using the system console.
 
 | ![System.Console version of 10 PRINT program](./assets/Console_10-PRINT.png) |
 |:--:|
-| *[System.Console](./src/abremir.C64.10-Print-SystemConsole/) version of `10 PRINT` program* |
+| *[System.Console](./source/abremir.C64.10-Print-SystemConsole/) version of `10 PRINT` program* |
 
 I was able to get the right colours (with the help of [PastelEx](https://github.com/k-iro/PastelEx)) and the right characters, but without the frame and without using the C64 font. The C64 font is part of what makes the maze-like pattern stand out.
 
@@ -56,7 +56,7 @@ And I found the [Simple and Fast Multimedia Library](https://www.sfml-dev.org/) 
 
 | ![SFML version of 10 PRINT program](./assets/SFML_10-PRINT.png) |
 |:--:|
-| *[SFML](./src/abremir.C64.10-Print-SFML/) version of `10 PRINT` program* |
+| *[SFML](./source/abremir.C64.10-Print-SFML/) version of `10 PRINT` program* |
 
 This looks close enough to the C64 with the expected maze-like pattern standing out, although it requires a bit of artificial padding to the right-hand side of the usable screen. Also, it depends on libraries compiled for the specific platform you want it to run on, and it does not run as a self-contained executable.
 
@@ -72,7 +72,7 @@ So, I started playing around with [Avalonia UI](https://www.avaloniaui.net/), wh
 
 | ![Avalonia UI version of 10 PRINT program](./assets/Avalonia_10-PRINT.png) |
 |:--:|
-| *[Avalonia UI](./src/abremir.C64.10-Print-Avalonia/) version of `10 PRINT` program* |
+| *[Avalonia UI](./source/abremir.C64.10-Print-Avalonia/) version of `10 PRINT` program* |
 
 This is similar to what was achieved with the usage of SFML, with the added benefit that the padding to the right-hand side of the usable screen is not needed, making this my closest implementation to the C64 "look and feel" of the `10 PRINT` program.
 
