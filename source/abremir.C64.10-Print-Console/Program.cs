@@ -1,4 +1,4 @@
-﻿using System.Drawing;
+using System.Drawing;
 using PastelExtended;
 
 Console.CursorVisible = false;
@@ -6,8 +6,6 @@ PastelEx.Background = Color.FromArgb(0, 0, 0xAA);
 PastelEx.Foreground = Color.FromArgb(0, 0x88, 0xFF);
 
 PastelEx.ClearConsole();
-
-var random = new Random();
 
 var delay = 10;
 var windowTitle = "C=64 10 PRINT [ESC to close] [SPACE to start/stop] [delay {0}ms (+/- to adjust)]";
@@ -73,7 +71,7 @@ while (true)
         }
         Thread.Sleep(delay);
         Console.Write(
-            ((char)(random.Next(2) == 0 ? 47 : 92) + (pos == 39 ? Environment.NewLine : string.Empty))
+            ((char)(Random.Shared.Next(2) == 0 ? 47 : 92) + (pos == 39 ? Environment.NewLine : string.Empty))
             .Bg(PastelEx.Background).Fg(PastelEx.Foreground));
         pos++;
     }

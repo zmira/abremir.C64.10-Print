@@ -8,7 +8,7 @@
     Width="800"
     Height="560"
     Background="Black"
-    FontFamily="/Assets/C64_Pro_Mono-STYLE.ttf#"
+    FontFamily="/Assets/C64_Pro_Mono-STYLE.ttf#C64 Pro Mono"
     FontSize="16"
     mc:Ignorable="d">
     <Viewbox Stretch="Uniform">

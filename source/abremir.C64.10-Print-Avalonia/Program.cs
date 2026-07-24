@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Avalonia;
 
 namespace C64_10_Print_Avalonia

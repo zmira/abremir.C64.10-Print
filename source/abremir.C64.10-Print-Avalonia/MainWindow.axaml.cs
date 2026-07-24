@@ -1,5 +1,3 @@
-// Ignore Spelling: Avalonia
-
 using System;
 using System.Linq;
 using System.Threading;
@@ -11,7 +9,6 @@ namespace C64_10_Print_Avalonia
     public partial class MainWindow : Window
     {
         private readonly string _windowTitle = "C=64 10 PRINT [ESC to close] [SPACE to start/stop] [delay {0}ms (+/- to adjust)]";
-        private readonly Random _random = new();
         private bool _running;
         private int _delay = 10;
 
@@ -94,7 +91,7 @@ RUN
                     c64TextBlock.Text = string.Join(Environment.NewLine, lines.Skip(1));
                 }
                 Thread.Sleep(_delay);
-                c64TextBlock.Text += (lines[^1].Length == 40 ? Environment.NewLine : string.Empty) + ((char)(_random.Next(2) == 0 ? 47 : 92)).ToString();
+                c64TextBlock.Text += (lines[^1].Length == 40 ? Environment.NewLine : string.Empty) + ((char)(Random.Shared.Next(2) == 0 ? 47 : 92)).ToString();
             }
         }
 

@@ -1,10 +1,8 @@
-﻿using System.Reflection;
+using System.Reflection;
 using SFML.Graphics;
 using SFML.System;
 using SFML.Window;
 using TGUI;
-
-var random = new Random();
 
 var assembly = Assembly.GetExecutingAssembly();
 using var fontStream = assembly.GetManifestResourceStream(
@@ -116,7 +114,7 @@ while (window.IsOpen)
             textBox.Text = string.Join(Environment.NewLine, lines.Skip(1));
         }
         Thread.Sleep(delay);
-        textBox.AddText((lines[^1].Length == 40 ? Environment.NewLine : string.Empty) + ((char)(random.Next(2) == 0 ? 47 : 92)).ToString());
+        textBox.AddText((lines[^1].Length == 40 ? Environment.NewLine : string.Empty) + ((char)(Random.Shared.Next(2) == 0 ? 47 : 92)).ToString());
     }
 
     window.DispatchEvents();

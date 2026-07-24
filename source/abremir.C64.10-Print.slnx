@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="../.gitignore" />
+    <File Path="../LICENSE" />
+    <File Path="../README.md" />
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="abremir.C64.10-Print-Avalonia/abremir.C64.10-Print-Avalonia.csproj" />
+  <Project Path="abremir.C64.10-Print-SFML/abremir.C64.10-Print-SFML.csproj" />
+  <Project Path="abremir.C64.10-Print-Console/abremir.C64.10-Print-Console.csproj" />
+</Solution>
